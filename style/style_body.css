@@ -22,5 +22,18 @@ body {
 }
 .slider_body img {
     object-fit: contain;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     width: var(--widht);
+    transition: all 0.5s ease 0s;
+}
+#img2 {
+    display: none;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+body button {
+    width: 100px;
+    height: 100px;
 }
