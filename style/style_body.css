@@ -46,8 +46,8 @@ body {
 .button {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 7rem;
+    justify-content: space-around;
+    width: 10rem;
     height: 1rem;
 }
 input[name="radio"] {
@@ -61,9 +61,17 @@ input[name="radio"] {
     height: 1rem;
     border-radius: 50%;
     background-color: #71ABFE;
+    transition: all 0.6s ease;
+}
+.my_button_b1:hover,
+.my_button_b2:hover,
+.my_button_b3:hover,
+.my_button_b4:hover {
+    cursor: pointer;
+    box-shadow: 0.2em 0.2em .4em red, -0.5em 0 .4em olive;
 }
 .title_h1 {
-    width: 50rem;
+    width: 52rem;
     overflow: hidden;
 }
 .title_h2 {
@@ -113,16 +121,16 @@ input[name="radio"] {
 }
 
 #radio1:checked ~ .container1 .button .my_button_b1 {
-    background-color: #FFFFFF;
+    background-color: #2bffff;
 }
 #radio2:checked ~ .container1 .button .my_button_b2 {
-    background-color: #FFFFFF;
+    background-color: #2bffff;
 }
 #radio3:checked ~ .container1 .button .my_button_b3 {
-    background-color: #FFFFFF;
+    background-color: #2bffff;
 }
 #radio4:checked ~ .container1 .button .my_button_b4 {
-    background-color: #FFFFFF;
+    background-color: #2bffff;
 }
 
 #radio1:checked ~ .container1 .title_h1 .title_h2 {
