@@ -50,6 +50,10 @@ body {
     width: 10rem;
     height: 1rem;
 }
+.button div {
+    width: 1.5rem;
+    height: 1.5rem;
+}
 input[name="radio"] {
     display: none;
 }
@@ -57,17 +61,33 @@ input[name="radio"] {
 .my_button_b2,
 .my_button_b3,
 .my_button_b4 {
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-    background-color: #71ABFE;
-    transition: all 0.6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .my_button_b1:hover,
 .my_button_b2:hover,
 .my_button_b3:hover,
 .my_button_b4:hover {
     cursor: pointer;
+}
+.my_button_b1 span,
+.my_button_b2 span,
+.my_button_b3 span,
+.my_button_b4 span {
+    display: flex;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #71ABFE;
+    transition: all 0.6s ease;
+}
+.my_button_b1:hover span,
+.my_button_b2:hover span,
+.my_button_b3:hover span,
+.my_button_b4:hover span {
     box-shadow: 0.2em 0.2em .4em red, -0.5em 0 .4em olive;
 }
 .title_h1 {
@@ -89,6 +109,7 @@ input[name="radio"] {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     margin-top: 2rem;
 }
 @media (max-width: 800px) {
@@ -120,16 +141,16 @@ input[name="radio"] {
     margin-left: -300%;
 }
 
-#radio1:checked ~ .container1 .button .my_button_b1 {
+#radio1:checked ~ .container1 .button .my_button_b1 span {
     background-color: #2bffff;
 }
-#radio2:checked ~ .container1 .button .my_button_b2 {
+#radio2:checked ~ .container1 .button .my_button_b2 span {
     background-color: #2bffff;
 }
-#radio3:checked ~ .container1 .button .my_button_b3 {
+#radio3:checked ~ .container1 .button .my_button_b3 span {
     background-color: #2bffff;
 }
-#radio4:checked ~ .container1 .button .my_button_b4 {
+#radio4:checked ~ .container1 .button .my_button_b4 span {
     background-color: #2bffff;
 }
 
